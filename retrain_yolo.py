@@ -160,6 +160,7 @@ def get_detector_mask(boxes, anchors):
     return np.array(detectors_mask), np.array(matching_true_boxes)
 
 def create_model(anchors, class_names, load_pretrained=True, freeze_body=True):
+    
     '''
     returns the body of the model and the model
 

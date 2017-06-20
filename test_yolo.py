@@ -73,8 +73,12 @@ def _main(args):
 
     with open(anchors_path) as f:
         anchors = f.readline()
-        anchors = [float(x) for x in anchors.split(',')]
-        anchors = np.array(anchors).reshape(-1, 2)
+        try:
+            anchors = [float(x) for x in anchors.split(',')]
+            anchors = np.array(anchors).reshape(-1, 2)
+        except ValueError:
+            pass
+        
 
     yolo_model = load_model(model_path)
 

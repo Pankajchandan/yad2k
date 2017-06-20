@@ -237,8 +237,9 @@ def _main(args):
             prev_layer = all_layers[-1]
 
         elif section.startswith('region'):
-            with open('{}_anchors.txt'.format(output_root), 'w') as f:
+            with open('{}_anchors.txt'.format(output_root), 'w') as f :
                 print(cfg_parser[section]['anchors'], file=f)
+                print('done')
 
         elif (section.startswith('net') or section.startswith('cost') or
               section.startswith('softmax')):
