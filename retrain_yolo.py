@@ -26,7 +26,7 @@ argparser.add_argument(
     '-d',
     '--data_path',
     help="path to numpy data file (.npz) containing np.object array 'boxes' and np.uint8 array 'images'",
-    default=os.path.join('..', 'DATA', 'underwater_data.npz'))
+    default=os.path.join('DATA', 'underwater_data.npz'))
 
 argparser.add_argument(
     '-a',
@@ -38,7 +38,7 @@ argparser.add_argument(
     '-c',
     '--classes_path',
     help='path to classes file, defaults to pascal_classes.txt',
-    default=os.path.join('..', 'DATA', 'underwater_classes.txt'))
+    default=os.path.join('DATA', 'underwater_classes.txt'))
 
 # Default anchor boxes
 YOLO_ANCHORS = np.array(
