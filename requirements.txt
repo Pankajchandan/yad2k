@@ -1,0 +1,10 @@
+imageio==2.1.2
+Flask==0.12.2
+h5py==2.7.0
+Keras==2.0.4
+moviepy==0.2.3.2
+tensorflow-gpu==1.0.1
+matplotlib==2.0.2
+Werkzeug==0.12.2
+numpy==1.12.1
+Pillow==4.1.1
